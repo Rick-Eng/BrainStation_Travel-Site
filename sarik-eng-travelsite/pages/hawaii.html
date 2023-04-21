@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <meta name="viewport" content="width=1280" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/destinations.css" />
     <title>Travel Site</title>
   </head>
   <body>
@@ -20,24 +21,108 @@
         <div>
           <ul class="nav__bar">
             <li class="nav__bar--item">
-              <a class="nav__bar--link" href="#">Home</a>
+              <a class="nav__bar--link" href="../index.html">Home</a>
             </li>
             <li class="nav__bar--item">
-              <a class="nav__bar--link" href="./pages/hawaii.html">Hawaii</a>
+              <a class="nav__bar--link nav-hawaii" href="#">Hawaii</a>
             </li>
             <li class="nav__bar--item">
-              <a class="nav__bar--link" href="./pages/iceland.html">Iceland</a>
+              <a class="nav__bar--link" href="./iceland.html">Iceland</a>
             </li>
             <li class="nav__bar--item">
-              <a class="nav__bar--link" href="./pages/greece.html">Greece</a>
+              <a class="nav__bar--link" href="./greece.html">Greece</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+    <!-- Country Main Seciton -->
+    <main>
+      <div class="destination">Hawaii</div>
 
-    <article>
-      <div></div>
-    </article>
+      <div class="container" id="hawaii">
+        <div class="container__card">
+          <div class="container__card--title">Friday</div>
+          <ul class="container__card--list">
+            <li class="container__card--list--item">Breakfast</li>
+            <li class="container__card--list--item">Lunch</li>
+            <li class="container__card--list--item">Dinner</li>
+            <li class="container__card--list--item">Snorkeling</li>
+          </ul>
+        </div>
+
+        <div class="container__card">
+          <div class="container__card--title">Saturday</div>
+          <ul class="container__card--list">
+            <li class="container__card--list--item">Breakfast</li>
+            <li class="container__card--list--item">Lunch</li>
+            <li class="container__card--list--item">Dinner</li>
+            <li class="container__card--list--item">Snorkeling</li>
+          </ul>
+        </div>
+
+        <div class="container__card">
+          <div class="container__card--title">Sunday</div>
+          <ul class="container__card--list">
+            <li class="container__card--list--item">Breakfast</li>
+            <li class="container__card--list--item">Lunch</li>
+            <li class="container__card--list--item">Dinner</li>
+            <li class="container__card--list--item">Snorkeling</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+      <div class="footer__container">
+        <h2 class="footer__container--heading">Contact</h2>
+        <p class="footer__container--text">EMAIL</p>
+        <p class="footer__container--description">info@travelsite.com</p>
+      </div>
+
+      <div class="footer__container">
+        <h2 class="footer__container--heading">Hours</h2>
+        <div class="footer__container--sub">
+          <div>
+            <p class="footer__container--text">MONDAY - FRIDAY</p>
+            <p class="footer__container--description">9:00 AM - 5:00 PM</p>
+          </div>
+          <div>
+            <p class="footer__container--text">SATURDAY</p>
+            <p class="footer__container--description">10:00 AM - 4:00 PM</p>
+          </div>
+          <div>
+            <p class="footer__container--text">SUNDAY</p>
+            <p class="footer__container--description">Close</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__container">
+        <h2 class="footer__container--heading">Social</h2>
+        <div>
+          <a href="https://www.instagram.com/" class="footer__social"
+            ><img
+              class="footer__social--image"
+              src="../assets/images/icon-instagram.png"
+              alt="instagram icon"
+          /></a>
+          <a href="https://www.facebook.com/" class="footer__social"
+            ><img
+              class="footer__social--image"
+              src="../assets/images/icon-facebook.png"
+              alt="instagram icon"
+          /></a>
+          <a href="https://twitter.com/" class="footer__social"
+            ><img
+              class="footer__social--image"
+              src="../assets/images/icon-twitter.png"
+              alt="instagram icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -2,9 +2,128 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana;
+  font-family: Verdana, sans-serif;
 }
 
 h1 {
   font-size: 2rem;
+}
+
+/* Navigation */
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  width: 100vw;
+  padding: 0.5rem 0;
+}
+.nav__logo {
+  font-size: 1.3rem;
+  padding-left: 5rem;
+}
+.nav__logo--link {
+  text-decoration: none;
+  color: #335576;
+}
+.nav__bar {
+  list-style: none;
+  padding-right: 5rem;
+}
+.nav__bar .nav__bar--item {
+  display: inline-flex;
+  padding: 0 1rem;
+}
+.nav__bar--item .nav__bar--link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: rgb(40, 39, 38);
+}
+
+.nav-home {
+  border-bottom: 0.2rem solid #db7a4e;
+  padding-bottom: 0.3rem;
+}
+
+.nav-hawaii {
+  border-bottom: 0.2rem solid #db7a4e;
+  padding-bottom: 0.3rem;
+}
+
+.nav-iceland {
+  border-bottom: 0.2rem solid #db7a4e;
+  padding-bottom: 0.3rem;
+}
+
+.nav-greece {
+  border-bottom: 0.2rem solid #db7a4e;
+  padding-bottom: 0.3rem;
+}
+
+/* Footer Section */
+
+.footer {
+  height: 10rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fefaf5;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+}
+.footer__container--heading {
+  padding-bottom: 2rem;
+  align-items: baseline;
+  color: #335576;
+}
+.footer__container--sub {
+  display: inline-flex;
+  font-size: 1rem;
+}
+.footer__container--text {
+  padding-right: 7rem;
+  padding-bottom: 1rem;
+  font-size: 0.5rem;
+  color: #db7a4e;
+}
+
+.footer__container--description {
+  font-size: 0.7rem;
+  color: #335576;
+}
+.footer__social {
+  padding: 0 1rem;
+}
+.footer__social--image {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .nav__bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer {
+    flex-direction: column;
+    height: auto;
+  }
+  .card-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .recommendation {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
 }
